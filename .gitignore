@@ -29,10 +29,4 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-/.idea/.generators
-/.idea/.gitignore
-/.idea/.rakeTasks
-/.idea/blog_app.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
+/.idea
