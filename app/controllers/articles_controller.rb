@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  def index; end
+  def index; 
+    @articles = Article.all
+  end
 
   def new
     @article = Article.new

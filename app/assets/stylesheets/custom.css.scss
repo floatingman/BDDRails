@@ -6,6 +6,19 @@ body {
   background: #e1e1e1;
   color: #64103F;
 }
+// Article listing styling
+.article-title {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 0.8em;
+  padding-left: 0.7em;
+}
+
+.article-body {
+  font-size: 1.5em;
+  padding-left: 1.2em;
+  color: #64103F;
+}
 
 // Navbar styling
 .navbar {
