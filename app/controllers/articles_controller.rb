@@ -2,6 +2,7 @@
 
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show edit update destroy]
+
   def index
     @articles = Article.all
   end
@@ -21,25 +22,25 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def show
+  def show;
   end
 
-  def edit
+  def edit;
   end
 
   def update
     if @article.update(article_params)
-      flash[:success] = "Article has been updated"
+      flash[:success] = 'Article has been updated'
       redirect_to @article
     else
-      flash.now[:danger] = "Article has not been updated"
+      flash.now[:danger] = 'Article has not been updated'
       render :edit
     end
   end
 
   def destroy
     if @article.destroy
-      flash[:success] = "Article has been deleted"
+      flash[:success] = 'Article has been deleted'
       redirect_to articles_path
     end
   end
@@ -47,7 +48,7 @@ class ArticlesController < ApplicationController
   protected
 
   def resource_not_found
-    message = "The article you are looking for could not be found"
+    message = 'The article you are looking for could not be found'
     flash[:alert] = message
     redirect_to root_path
   end

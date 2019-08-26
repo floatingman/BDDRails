@@ -7,6 +7,6 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  def resource_not_found
+  def resource_not_found;
   end
 end
